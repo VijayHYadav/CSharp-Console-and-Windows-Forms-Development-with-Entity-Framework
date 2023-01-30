@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOfExample", "IndexOfEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchExample", "BinarySearchExample\BinarySearchExample.csproj", "{44C8F4C3-3B57-4B70-93EE-3D15A2368D29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClearExample", "ClearExample\ClearExample.csproj", "{E92D7A65-4E0B-4729-A5B7-6362F3947B33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{44C8F4C3-3B57-4B70-93EE-3D15A2368D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44C8F4C3-3B57-4B70-93EE-3D15A2368D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44C8F4C3-3B57-4B70-93EE-3D15A2368D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E92D7A65-4E0B-4729-A5B7-6362F3947B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E92D7A65-4E0B-4729-A5B7-6362F3947B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E92D7A65-4E0B-4729-A5B7-6362F3947B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E92D7A65-4E0B-4729-A5B7-6362F3947B33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
