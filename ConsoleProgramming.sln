@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReverseExample", "Arra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayIndexFromEndOperatorExample", "ArrayIndexFromEndOperatorExample\ArrayIndexFromEndOperatorExample.csproj", "{AEAEEB43-F98E-4433-9695-716F650B2615}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMultiDimArraysExample", "ArrayMultiDimArraysExample\ArrayMultiDimArraysExample.csproj", "{3D8984D5-59C0-4668-8D7C-B675051F9DC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{AEAEEB43-F98E-4433-9695-716F650B2615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEAEEB43-F98E-4433-9695-716F650B2615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEAEEB43-F98E-4433-9695-716F650B2615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8984D5-59C0-4668-8D7C-B675051F9DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8984D5-59C0-4668-8D7C-B675051F9DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8984D5-59C0-4668-8D7C-B675051F9DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8984D5-59C0-4668-8D7C-B675051F9DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
