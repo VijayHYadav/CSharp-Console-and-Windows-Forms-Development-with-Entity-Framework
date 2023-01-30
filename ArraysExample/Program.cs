@@ -16,6 +16,19 @@ namespace ArraysExample
                 Console.WriteLine(b[i]);
             }
 
+            foreach(string i in c)
+            {
+                Console.WriteLine(i);
+            }
+
+            System.Console.WriteLine();
+
+            //reverse
+            for(int i = c.Length -1 ; i >=0 ; i--)
+            {
+                Console.WriteLine(c[i]);
+            }
+
             System.Console.ReadKey();
         }
     }
