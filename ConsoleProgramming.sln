@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary2", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCopyAndClone", "ArrayCopyAndClone\ArrayCopyAndClone.csproj", "{18965A8C-3232-4E88-A4DC-953F036F844D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCopyExample", "DeepCopyExample\DeepCopyExample.csproj", "{9EFA2359-8E9A-4113-83DA-9D575CE6002E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{18965A8C-3232-4E88-A4DC-953F036F844D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18965A8C-3232-4E88-A4DC-953F036F844D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18965A8C-3232-4E88-A4DC-953F036F844D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EFA2359-8E9A-4113-83DA-9D575CE6002E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EFA2359-8E9A-4113-83DA-9D575CE6002E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EFA2359-8E9A-4113-83DA-9D575CE6002E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EFA2359-8E9A-4113-83DA-9D575CE6002E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
