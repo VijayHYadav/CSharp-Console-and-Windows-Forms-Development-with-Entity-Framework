@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListExample", "ListExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAddMethod", "ListAddMethod\ListAddMethod.csproj", "{30669E3F-85C5-4DCF-9951-1B9407177E94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListInsertExample", "ListInsertExample\ListInsertExample.csproj", "{869FB15C-CDF1-4BB5-B8CA-BC4B14A118DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869FB15C-CDF1-4BB5-B8CA-BC4B14A118DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869FB15C-CDF1-4BB5-B8CA-BC4B14A118DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869FB15C-CDF1-4BB5-B8CA-BC4B14A118DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869FB15C-CDF1-4BB5-B8CA-BC4B14A118DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
