@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListExample", "ListExample\ListExample.csproj", "{908057FC-6652-488B-B6C9-23965D053496}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListAddMethod", "ListAddMethod\ListAddMethod.csproj", "{30669E3F-85C5-4DCF-9951-1B9407177E94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{908057FC-6652-488B-B6C9-23965D053496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{908057FC-6652-488B-B6C9-23965D053496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{908057FC-6652-488B-B6C9-23965D053496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30669E3F-85C5-4DCF-9951-1B9407177E94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
