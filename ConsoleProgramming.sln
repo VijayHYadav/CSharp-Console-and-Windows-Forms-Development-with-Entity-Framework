@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayOfObjectsExample", "Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary2", "ClassLibrary2\ClassLibrary2.csproj", "{BD60AB9A-7DA2-494F-85DD-D7EE60F9CDFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayCopyAndClone", "ArrayCopyAndClone\ArrayCopyAndClone.csproj", "{18965A8C-3232-4E88-A4DC-953F036F844D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{BD60AB9A-7DA2-494F-85DD-D7EE60F9CDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD60AB9A-7DA2-494F-85DD-D7EE60F9CDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD60AB9A-7DA2-494F-85DD-D7EE60F9CDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18965A8C-3232-4E88-A4DC-953F036F844D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18965A8C-3232-4E88-A4DC-953F036F844D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18965A8C-3232-4E88-A4DC-953F036F844D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18965A8C-3232-4E88-A4DC-953F036F844D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
