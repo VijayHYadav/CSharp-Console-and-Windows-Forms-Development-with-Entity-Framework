@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListInsertExample", "ListIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListRemoveRemoveAtRemoveRangeRemoveAllClear", "ListRemoveRemoveAtRemoveRangeRemoveAllClear\ListRemoveRemoveAtRemoveRangeRemoveAllClear.csproj", "{3F84C9CC-AB8A-45FB-8B74-812395EBE537}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOfBinarySearchContains", "IndexOfBinarySearchContains\IndexOfBinarySearchContains.csproj", "{487C96A4-2733-45B3-9D3D-A6DB6DFA78E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3F84C9CC-AB8A-45FB-8B74-812395EBE537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F84C9CC-AB8A-45FB-8B74-812395EBE537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F84C9CC-AB8A-45FB-8B74-812395EBE537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487C96A4-2733-45B3-9D3D-A6DB6DFA78E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487C96A4-2733-45B3-9D3D-A6DB6DFA78E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487C96A4-2733-45B3-9D3D-A6DB6DFA78E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487C96A4-2733-45B3-9D3D-A6DB6DFA78E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
