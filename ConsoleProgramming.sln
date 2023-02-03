@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToArrayForEach", "ToArrayFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExistsFndFndIdxFndLastFndLastIdxFndAll", "ExistsFndFndIdxFndLastFndLastIdxFindAll\ExistsFndFndIdxFndLastFndLastIdxFndAll.csproj", "{87A62289-48A3-4B14-A432-0F5C37C246CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertAllExample", "ConvertAllExample\ConvertAllExample.csproj", "{C408C4CA-FAD3-4A7B-97EB-982DA3AFE884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{87A62289-48A3-4B14-A432-0F5C37C246CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A62289-48A3-4B14-A432-0F5C37C246CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A62289-48A3-4B14-A432-0F5C37C246CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C408C4CA-FAD3-4A7B-97EB-982DA3AFE884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C408C4CA-FAD3-4A7B-97EB-982DA3AFE884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C408C4CA-FAD3-4A7B-97EB-982DA3AFE884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C408C4CA-FAD3-4A7B-97EB-982DA3AFE884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
