@@ -49,5 +49,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\HarshaBank.BusinessLogicLayer.csproj">
+      <Project>{66eb8c2f-0e38-4b59-b002-1ee2f15dcdf6}</Project>
+      <Name>HarshaBank.BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HarshaBank.Configuration\HarshaBank.Configuration.csproj">
+      <Project>{a4e44b68-7eaa-43c3-a29a-3847938a19b2}</Project>
+      <Name>HarshaBank.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HarshaBank.Entities\HarshaBank.Entities.csproj">
+      <Project>{2eb9dc12-f272-4e40-9ba7-9cb6f596e08a}</Project>
+      <Name>HarshaBank.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HarshaBank.Exceptions\HarshaBank.Exceptions.csproj">
+      <Project>{f22ea2e5-e505-4732-b02d-49c794e83c86}</Project>
+      <Name>HarshaBank.Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
