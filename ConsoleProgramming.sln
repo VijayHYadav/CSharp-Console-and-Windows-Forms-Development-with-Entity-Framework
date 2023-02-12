@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparerExample", "ICompar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CovarianceExample", "CovarianceExample\CovarianceExample.csproj", "{7E67DAD5-7F94-4727-AA0C-7DF927217BA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContravarianceExample", "ContravarianceExample\ContravarianceExample.csproj", "{42A90E1E-C32A-4626-97F3-169EE5FE13C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +245,10 @@ Global
 		{7E67DAD5-7F94-4727-AA0C-7DF927217BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E67DAD5-7F94-4727-AA0C-7DF927217BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E67DAD5-7F94-4727-AA0C-7DF927217BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A90E1E-C32A-4626-97F3-169EE5FE13C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A90E1E-C32A-4626-97F3-169EE5FE13C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A90E1E-C32A-4626-97F3-169EE5FE13C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A90E1E-C32A-4626-97F3-169EE5FE13C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
