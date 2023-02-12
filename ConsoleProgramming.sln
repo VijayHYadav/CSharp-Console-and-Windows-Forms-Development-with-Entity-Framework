@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousObjectsExample", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary7", "ClassLibrary7\ClassLibrary7.csproj", "{4EFB81C4-F627-45E0-B3FD-B692433B6CBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedAnonymousTypes", "NestedAnonymousTypes\NestedAnonymousTypes.csproj", "{42709BF2-8491-442D-87C2-5A635A8B63AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{4EFB81C4-F627-45E0-B3FD-B692433B6CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EFB81C4-F627-45E0-B3FD-B692433B6CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EFB81C4-F627-45E0-B3FD-B692433B6CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
