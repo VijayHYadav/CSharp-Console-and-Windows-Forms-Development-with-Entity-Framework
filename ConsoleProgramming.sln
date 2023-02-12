@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary7", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedAnonymousTypes", "NestedAnonymousTypes\NestedAnonymousTypes.csproj", "{42709BF2-8491-442D-87C2-5A635A8B63AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousArrays", "AnonymousArrays\AnonymousArrays.csproj", "{62F677EC-EF24-42FE-88FD-0C2D5FFC7FB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42709BF2-8491-442D-87C2-5A635A8B63AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F677EC-EF24-42FE-88FD-0C2D5FFC7FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F677EC-EF24-42FE-88FD-0C2D5FFC7FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F677EC-EF24-42FE-88FD-0C2D5FFC7FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F677EC-EF24-42FE-88FD-0C2D5FFC7FB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
