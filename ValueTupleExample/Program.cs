@@ -23,12 +23,12 @@ namespace ValueTupleExample
 
             Console.WriteLine("===");
 
-            // get details
-            (int customerId, string customerName, string email) = customer.GetCustomerDetails();
+            // get details discards
+            (int customerId, _, string email) = customer.GetCustomerDetails();
 
             Console.WriteLine(customerId);
-            Console.WriteLine(customerName);
             Console.WriteLine(email);
+
         }
     }
 }
