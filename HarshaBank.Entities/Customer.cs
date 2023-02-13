@@ -1,4 +1,5 @@
 ﻿using HarshaBank.Entities.Contracts;
+using HarshaBank.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,11 +32,35 @@ namespace HarshaBank.Entities
         /// <summary>
         /// CustomerCode.
         /// </summary>
-        public long CustomerCode { get => _customerCode; set => _customerCode = value; }
+        public long CustomerCode { 
+            get => _customerCode; 
+            set
+            {
+                if (value > 0)
+                {
+                    _customerCode = value;
+                } else
+                {
+                    throw new Exception("Customer code should be positive only.");
+                }
+            }
+        }
         /// <summary>
         /// CustomerName.
         /// </summary>
-        public string CustomerName { get => _customerName; set => _customerName = value; }
+        public string CustomerName { 
+            get => _customerName; 
+            set {
+                // customer name should be less then 40 character
+                if (value.Length < 40 && string.IsNullOrEmpty(value) == false)
+                {
+                    _customerName = value;
+                } else
+                {
+                    throw new CustomerException("Customer Name should not be null and less than 40 char long.");
+                }
+            }
+        }
         /// <summary>
         /// Address.
         /// </summary>
@@ -51,7 +76,22 @@ namespace HarshaBank.Entities
         /// <summary>
         /// Mobile.
         /// </summary>
-        public string Mobile { get => _mobile; set => _mobile = value; }
+        public string Mobile
+        {
+            get => _mobile;
+            set
+            {
+                // mobile number should be 10 char long.
+                if (value.Length == 10)
+                {
+                    _mobile = value;
+                }
+                else
+                {
+                    throw new Exception("Mobile number should 10-digit number");
+                }
+            }
+        }
         /// <summary>
         /// City.
         /// </summary>
