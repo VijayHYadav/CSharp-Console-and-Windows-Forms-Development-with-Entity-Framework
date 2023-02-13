@@ -11,7 +11,7 @@ namespace HarshaBank.Entities
     /// <summary>
     /// Represents customer of the bank
     /// </summary>
-    public class Customer: ICustomer
+    public class Customer: ICustomer, ICloneable
     {
         #region Private fields
         private Guid _customerId;
@@ -97,5 +97,23 @@ namespace HarshaBank.Entities
         /// </summary>
         public string City { get => _city; set => _city = value; }
         #endregion
+
+        #region method
+        public object Clone()
+        {
+            return new Customer()
+            {
+                CustomerId = this.CustomerId,
+                CustomerCode = this.CustomerCode,
+                CustomerName = this.CustomerName,
+                Address = this.Address,
+                Landmark = this.Landmark,
+                City = this.City,
+                Country = this.Country,
+                Mobile = this.Mobile
+            };
+        }
+        #endregion
+
     }
 }
