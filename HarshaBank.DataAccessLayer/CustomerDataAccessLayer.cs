@@ -1,5 +1,6 @@
 ﻿using HarshaBank.DataAccessLayer.Contracts;
 using HarshaBank.Entities;
+using HarshaBank.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,12 +44,23 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>Customers list</returns>
         public List<Customer> GetCustomers()
         {
-            //create a new customers list
-            List<Customer> customersList = new List<Customer>();
 
-            // copy all customers from the source collection into the newCustomers list
-            Customers.ForEach(item => customersList.Add(item.Clone() as Customer));
+            try { 
+                //create a new customers list
+                List<Customer> customersList = new List<Customer>();
+
+                // copy all customers from the source collection into the newCustomers list
+                Customers.ForEach(item => customersList.Add(item.Clone() as Customer));
             return customersList;
+            }
+            catch(CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
         }
 
@@ -59,15 +71,26 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>List of matching customer</returns>
         public List<Customer> GetCustomersByCondition(Predicate<Customer> predicate)
         {
-            //create a new customers list
-            List<Customer> customersList = new List<Customer>();
+            try
+            {
+                //create a new customers list
+                List<Customer> customersList = new List<Customer>();
 
-            //filter the collection
-            List<Customer> filteredCustomers = customersList.FindAll(predicate);
+                //filter the collection
+                List<Customer> filteredCustomers = customersList.FindAll(predicate);
 
-            // copy all customers from the source collection into the newCustomers list
-            Customers.ForEach(item => filteredCustomers.Add(item.Clone() as Customer));
-            return customersList;
+                // copy all customers from the source collection into the newCustomers list
+                Customers.ForEach(item => filteredCustomers.Add(item.Clone() as Customer));
+                return customersList;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -77,6 +100,8 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>Returns Guid of newly created customer</returns>
         public Guid AddCustomer(Customer customer)
         {
+            try
+            {
             //generate new Guid
             customer.CustomerId = Guid.NewGuid();
 
@@ -84,6 +109,15 @@ namespace HarshaBank.DataAccessLayer
             Customers.Add(customer);
 
             return customer.CustomerId;
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
 
         }
 
@@ -94,6 +128,9 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>Determines whether the customer is updated or not</returns>
         public bool UpdateCustomer(Customer customer)
         {
+            try
+            {
+
             //find existing customer by CustomerId
             Customer existingCustomer = Customers.Find(item => item.CustomerId == customer.CustomerId);
 
@@ -113,6 +150,15 @@ namespace HarshaBank.DataAccessLayer
             {
                 return false;
             }
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -122,12 +168,24 @@ namespace HarshaBank.DataAccessLayer
         /// <returns>Indicates whether the customer is deleted or not</returns>
         public bool DeleteCustomer(Guid customerId)
         {
+            try
+            {
             // delete customer by CustomerId
             if(Customers.RemoveAll(item => item.CustomerId == customerId) > 0) {
                 return true; // indicates one or more customers are deleted
             } else
             {
                 return false; // indicates no customer is deleted
+            }
+
+            }
+            catch (CustomerException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
         #endregion
