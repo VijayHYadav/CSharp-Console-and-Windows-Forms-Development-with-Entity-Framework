@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\LINQExample.csproj", "{D963516D-074F-488F-834B-881447557F13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByExample", "OrderByExample\OrderByExample.csproj", "{9F3A22ED-B691-466D-8524-9E771790F8A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D963516D-074F-488F-834B-881447557F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D963516D-074F-488F-834B-881447557F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D963516D-074F-488F-834B-881447557F13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3A22ED-B691-466D-8524-9E771790F8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3A22ED-B691-466D-8524-9E771790F8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3A22ED-B691-466D-8524-9E771790F8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3A22ED-B691-466D-8524-9E771790F8A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
