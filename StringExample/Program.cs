@@ -10,12 +10,15 @@ namespace StringExample
     {
         static void Main(string[] args)
         {
-            System.String x = "hello world";
-            int n = x.Length;
-            char c = x[0];
-            Console.WriteLine(c);
-            Console.WriteLine(x);
-            Console.WriteLine(n);
+            string x = "Hello World";
+            string y = "Hello World";
+            string z = x;
+            x = "hello";
+
+            Console.WriteLine(x); //hello
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
             Console.ReadKey();
         }
     }
