@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExample", "StringExample\StringExample.csproj", "{7D13BF5E-795D-48B8-84A0-A6F0019775C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingStringExample", "ConvertingStringExample\ConvertingStringExample.csproj", "{542BFDEC-96B4-47B6-B1C2-7623963CFD23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7D13BF5E-795D-48B8-84A0-A6F0019775C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D13BF5E-795D-48B8-84A0-A6F0019775C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D13BF5E-795D-48B8-84A0-A6F0019775C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542BFDEC-96B4-47B6-B1C2-7623963CFD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542BFDEC-96B4-47B6-B1C2-7623963CFD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542BFDEC-96B4-47B6-B1C2-7623963CFD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542BFDEC-96B4-47B6-B1C2-7623963CFD23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
