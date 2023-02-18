@@ -20,6 +20,25 @@ namespace ConvertingStringExample
             Console.WriteLine(str.Substring(2));
             Console.WriteLine(str.Substring(2, 4));
 
+            string str_rpl = str.Replace("e", "x");
+            Console.WriteLine("Replaced: "+str_rpl);
+
+            string message = "how are you";
+            string[] words = message.Split(' ');
+            foreach (var item in words)
+            {
+                Console.WriteLine(item);
+            }
+
+            string message_with_space = " hello ";
+            Console.WriteLine(message_with_space.Trim());
+
+            char[] characters = str.ToCharArray();
+            foreach (var item in characters)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadKey();
         }
     }
