@@ -39,6 +39,12 @@ namespace ConvertingStringExample
                 Console.WriteLine(item);
             }
 
+            string[] my_words = new string[] { "how", "are", "you" };// how-are-you
+            Console.WriteLine(string.Join("-", my_words));
+
+            char[] chars = new char[] { 'h', 'e', 'l', 'l', 'o' };
+            string str2 = new string(chars);
+            Console.WriteLine(str2);
             Console.ReadKey();
         }
     }
