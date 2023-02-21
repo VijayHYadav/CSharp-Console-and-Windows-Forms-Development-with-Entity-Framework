@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderExample", "Str
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeExample", "DateTimeExample\DateTimeExample.csproj", "{1A35E5E5-5348-4C2B-A20E-36A652B91435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeFormatsExample", "DateTimeFormatsExample\DateTimeFormatsExample.csproj", "{DA7097B7-6954-4C8B-9D05-53CA8209D5A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1A35E5E5-5348-4C2B-A20E-36A652B91435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A35E5E5-5348-4C2B-A20E-36A652B91435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A35E5E5-5348-4C2B-A20E-36A652B91435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7097B7-6954-4C8B-9D05-53CA8209D5A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7097B7-6954-4C8B-9D05-53CA8209D5A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7097B7-6954-4C8B-9D05-53CA8209D5A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7097B7-6954-4C8B-9D05-53CA8209D5A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
