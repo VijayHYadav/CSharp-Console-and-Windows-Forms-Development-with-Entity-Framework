@@ -42,6 +42,32 @@ namespace CheckingStringsExample
             Console.WriteLine(name.IndexOf("e", 3)); // prev start index + 1
             Console.WriteLine(name.IndexOf("e", 0)); // prev start index + 1
 
+            Console.WriteLine();
+
+            Console.WriteLine(name.LastIndexOf('e'));
+            Console.WriteLine(name.LastIndexOf("lop"));
+            Console.WriteLine(name.LastIndexOf("l"));
+            Console.WriteLine(name.LastIndexOf("lx"));
+            Console.WriteLine(name.LastIndexOf("x"));
+            Console.WriteLine(name.LastIndexOf("e", 5)); // prev start index + 1
+            Console.WriteLine(name.LastIndexOf("e", 1)); // prev start index + 1
+            Console.WriteLine(name.LastIndexOf("e", 3)); // prev start index + 1
+            Console.WriteLine(name.LastIndexOf("e", 0)); // prev start index + 1
+
+            string user_input = null;
+            string user_input2 = "";
+            string user_input3 = " ";
+
+            Console.WriteLine(string.IsNullOrEmpty(user_input));
+            Console.WriteLine(string.IsNullOrEmpty(user_input2));
+            Console.WriteLine(string.IsNullOrEmpty(user_input3));
+
+            Console.WriteLine();
+
+            Console.WriteLine(string.IsNullOrWhiteSpace(user_input));
+            Console.WriteLine(string.IsNullOrWhiteSpace(user_input2));
+            Console.WriteLine(string.IsNullOrWhiteSpace(user_input3));
+
             Console.ReadLine();
         }
     }
