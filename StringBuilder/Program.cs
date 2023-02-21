@@ -24,7 +24,7 @@ namespace StringBuilderExample
             //Console.WriteLine(sentence);
 
             //StringBuilder
-            StringBuilder builder = new StringBuilder();
+            StringBuilder builder = new StringBuilder("hello ", 20);
             foreach (string word in words)
             {
                 builder.Append(word);
@@ -32,6 +32,16 @@ namespace StringBuilderExample
                 Console.WriteLine(builder.ToString() + ", " + builder.Length + ", " + builder.Capacity);
             }
             Console.WriteLine(builder.ToString());
+
+            builder[0] = 'v';
+            Console.WriteLine(builder.ToString());
+            Console.WriteLine(builder.MaxCapacity);
+
+            Console.WriteLine(builder.Insert(5, "updated"));
+            Console.WriteLine(builder.Remove(builder.ToString().IndexOf("q"), 5));
+            Console.WriteLine(builder.Replace("a", "r"));
+            Console.ReadKey();
+
             Console.ReadKey();
 
         }
