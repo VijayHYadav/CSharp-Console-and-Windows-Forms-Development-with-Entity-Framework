@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryExample", "BinaryExample\BinaryExample.csproj", "{824DB76E-78F3-46F3-80E8-ED5D71A625A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctalExample", "OctalExample\OctalExample.csproj", "{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{824DB76E-78F3-46F3-80E8-ED5D71A625A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{824DB76E-78F3-46F3-80E8-ED5D71A625A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{824DB76E-78F3-46F3-80E8-ED5D71A625A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
