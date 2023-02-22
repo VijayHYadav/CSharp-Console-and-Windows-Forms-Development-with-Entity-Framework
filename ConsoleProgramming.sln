@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeFormatsExample", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtractDateExample", "SubtractDateExample\SubtractDateExample.csproj", "{ADC55E9A-FAF7-4F05-8473-842B24DA7DE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingDatesExample", "AddingDatesExample\AddingDatesExample.csproj", "{BF13996D-D7B2-4FE1-A579-B108254DA17D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{ADC55E9A-FAF7-4F05-8473-842B24DA7DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADC55E9A-FAF7-4F05-8473-842B24DA7DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADC55E9A-FAF7-4F05-8473-842B24DA7DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF13996D-D7B2-4FE1-A579-B108254DA17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF13996D-D7B2-4FE1-A579-B108254DA17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF13996D-D7B2-4FE1-A579-B108254DA17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF13996D-D7B2-4FE1-A579-B108254DA17D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
