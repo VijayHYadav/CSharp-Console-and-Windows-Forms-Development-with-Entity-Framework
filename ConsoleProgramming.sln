@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryExample", "BinaryExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctalExample", "OctalExample\OctalExample.csproj", "{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexdecimalExample", "HexdecimalExample\HexdecimalExample.csproj", "{FC854568-470A-4810-BE3F-214C8A1E0E02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5171B05-E8F6-43B7-A4A8-DC631DFD1C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
