@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileInfoExample", "FileInfo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileInfoPropertiesExample", "FileInfoPropertiesExample\FileInfoPropertiesExample.csproj", "{F13C7D33-90B6-4590-8C8E-D7FD872A2ED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryExample", "DirectoryExample\DirectoryExample.csproj", "{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F13C7D33-90B6-4590-8C8E-D7FD872A2ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F13C7D33-90B6-4590-8C8E-D7FD872A2ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F13C7D33-90B6-4590-8C8E-D7FD872A2ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
