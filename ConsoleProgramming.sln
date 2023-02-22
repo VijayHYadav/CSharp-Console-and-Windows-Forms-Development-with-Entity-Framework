@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctalExample", "OctalExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexdecimalExample", "HexdecimalExample\HexdecimalExample.csproj", "{FC854568-470A-4810-BE3F-214C8A1E0E02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsciiExample", "AsciiExample\AsciiExample.csproj", "{0EA5A6FE-0C4E-4050-8AD6-E222543101C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC854568-470A-4810-BE3F-214C8A1E0E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA5A6FE-0C4E-4050-8AD6-E222543101C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA5A6FE-0C4E-4050-8AD6-E222543101C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA5A6FE-0C4E-4050-8AD6-E222543101C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA5A6FE-0C4E-4050-8AD6-E222543101C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
