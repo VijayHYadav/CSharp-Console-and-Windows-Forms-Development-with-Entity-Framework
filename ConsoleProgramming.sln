@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileInfoPropertiesExample",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryExample", "DirectoryExample\DirectoryExample.csproj", "{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryInfoExample", "DirectoryInfoExample\DirectoryInfoExample.csproj", "{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{915AD29B-D4F6-4ED5-BF42-CB8C7E8C30AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
