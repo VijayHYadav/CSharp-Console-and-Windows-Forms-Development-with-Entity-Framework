@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReadWriteExample", "Fil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLinesExample", "FileLinesExample\FileLinesExample.csproj", "{38AF1CF2-55F0-46B7-9779-E7CC1CFB565B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileInfoExample", "FileInfoExample\FileInfoExample.csproj", "{D9C7601D-2BD9-42E1-8EB2-C2B90CEE5F59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{38AF1CF2-55F0-46B7-9779-E7CC1CFB565B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AF1CF2-55F0-46B7-9779-E7CC1CFB565B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AF1CF2-55F0-46B7-9779-E7CC1CFB565B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C7601D-2BD9-42E1-8EB2-C2B90CEE5F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C7601D-2BD9-42E1-8EB2-C2B90CEE5F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C7601D-2BD9-42E1-8EB2-C2B90CEE5F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C7601D-2BD9-42E1-8EB2-C2B90CEE5F59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
