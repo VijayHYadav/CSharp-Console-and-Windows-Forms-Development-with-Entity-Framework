@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryExample", "Directo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryInfoExample", "DirectoryInfoExample\DirectoryInfoExample.csproj", "{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryInfoProperties", "DirectoryInfoProperties\DirectoryInfoProperties.csproj", "{480FA941-6EAF-4CFB-B881-69B3A17FDB49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1CA1C82-CDC4-4315-B146-5BBDFEF81F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480FA941-6EAF-4CFB-B881-69B3A17FDB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480FA941-6EAF-4CFB-B881-69B3A17FDB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480FA941-6EAF-4CFB-B881-69B3A17FDB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480FA941-6EAF-4CFB-B881-69B3A17FDB49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
