@@ -37,6 +37,27 @@ namespace FileStreamExample
             Console.WriteLine("dog.txt created");
 
             Console.ReadKey();
+
+            //File reading
+            //FileStream fileStream2 = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Read);
+            //FileStream fileStream2 = File.Open(filePath, FileMode.OpenOrCreate, FileAccess.Read);
+            //FileStream fileStream2 = File.OpenRead(filePath);
+            //FileStream fileStream2 = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream fileStream2 = fileInfo.OpenRead();
+
+            //create empty byte[]
+            byte[] bytes3 = new byte[fileStream2.Length];
+
+            //Read
+            fileStream2.Read(bytes3, 0, (int)fileStream2.Length);
+
+            //convert byte[] to string
+            string content3 = Encoding.ASCII.GetString(bytes3);
+            Console.WriteLine("\nFile read. File content is:");
+            Console.WriteLine(content3);
+            fileStream2.Close();
+
+            Console.ReadKey();
         }
     }
 }
