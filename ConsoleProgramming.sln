@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryWriterReaderExample",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerializationExample", "BinarySerializationExample\BinarySerializationExample.csproj", "{EF259BE2-921D-4B8D-BAE4-D0D94013DFB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonSerializationExample", "JsonSerializationExample\JsonSerializationExample.csproj", "{C3F9EEDC-9D9D-4CD9-8227-9FAECE91A736}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{EF259BE2-921D-4B8D-BAE4-D0D94013DFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF259BE2-921D-4B8D-BAE4-D0D94013DFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF259BE2-921D-4B8D-BAE4-D0D94013DFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F9EEDC-9D9D-4CD9-8227-9FAECE91A736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F9EEDC-9D9D-4CD9-8227-9FAECE91A736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F9EEDC-9D9D-4CD9-8227-9FAECE91A736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F9EEDC-9D9D-4CD9-8227-9FAECE91A736}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
