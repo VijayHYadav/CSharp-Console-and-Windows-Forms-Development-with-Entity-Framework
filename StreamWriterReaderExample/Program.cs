@@ -30,6 +30,31 @@ namespace StreamWriterReaderExample
             }
 
             Console.WriteLine("europe.txt created");
+
+            //3 ways to create object of StreamReader:
+            //StreamReader streamReader = new StreamReader(filePath);
+            //StreamReader streamReader = fileInfo.OpenText()
+            FileStream fileStream2 = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            using (StreamReader streamReader = new StreamReader(fileStream2))
+            {
+                Console.WriteLine("\nFile read. File content is:");
+
+                //To read full file
+                //string content_from_file = streamReader.ReadToEnd();
+                //Console.WriteLine(content_from_file);
+
+                //To read part-by-part (10 characters)
+                char[] buffer = new char[10];
+                int char_count;
+                do
+                {
+                    char_count = streamReader.Read(buffer, 0, 10);
+                    string s1 = new string(buffer);
+                    Console.WriteLine(s1);
+                } while (char_count > 0);
+            }
+
+
             Console.ReadKey();
         }
     }
