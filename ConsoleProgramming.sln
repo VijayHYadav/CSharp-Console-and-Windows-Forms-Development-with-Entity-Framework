@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveInfoExample", "DriveIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStreamExample", "FileStreamExample\FileStreamExample.csproj", "{96A93E85-0308-43CB-BE0B-0FC8F9E475A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamWriterReaderExample", "StreamWriterReaderExample\StreamWriterReaderExample.csproj", "{A83FFE04-6162-4C79-909D-908D4A809E7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{96A93E85-0308-43CB-BE0B-0FC8F9E475A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A93E85-0308-43CB-BE0B-0FC8F9E475A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A93E85-0308-43CB-BE0B-0FC8F9E475A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83FFE04-6162-4C79-909D-908D4A809E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83FFE04-6162-4C79-909D-908D4A809E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83FFE04-6162-4C79-909D-908D4A809E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83FFE04-6162-4C79-909D-908D4A809E7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
