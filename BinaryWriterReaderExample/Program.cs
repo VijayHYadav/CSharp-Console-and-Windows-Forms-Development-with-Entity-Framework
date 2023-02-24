@@ -27,6 +27,21 @@ namespace BinaryWriterReaderExample
             }
             Console.WriteLine("france.txt created");
 
+            //BinaryReader
+            FileStream fileStream2 = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            using (BinaryReader binaryReader = new BinaryReader(fileStream2))
+            {
+                int countryId_from_file = binaryReader.ReadInt16();
+                string countryName_from_file = binaryReader.ReadString();
+                long population_from_file = binaryReader.ReadInt64();
+                string region_from_file = binaryReader.ReadString();
+
+                Console.WriteLine("Country ID: " + countryId_from_file);
+                Console.WriteLine("Country Name: " + countryName_from_file);
+                Console.WriteLine("Population: " + population_from_file);
+                Console.WriteLine("Region: " + region_from_file);
+            }
+
             Console.ReadKey();
         }
     }
