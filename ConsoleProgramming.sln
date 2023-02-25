@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvalidOperationExample", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptionExample", "CustomExceptionExample\CustomExceptionExample.csproj", "{35D57797-BF32-4570-AD27-F8D7694E3F80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceExample", "StackTraceExample\StackTraceExample.csproj", "{C03B15C5-E68B-4218-890E-EC7A7B50B2D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{35D57797-BF32-4570-AD27-F8D7694E3F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35D57797-BF32-4570-AD27-F8D7694E3F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35D57797-BF32-4570-AD27-F8D7694E3F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03B15C5-E68B-4218-890E-EC7A7B50B2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03B15C5-E68B-4218-890E-EC7A7B50B2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03B15C5-E68B-4218-890E-EC7A7B50B2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03B15C5-E68B-4218-890E-EC7A7B50B2D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
