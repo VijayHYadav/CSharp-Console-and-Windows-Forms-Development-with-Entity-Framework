@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandlingExample", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatExceptionExample", "FormatExceptionExample\FormatExceptionExample.csproj", "{8B754185-1D70-4A31-89DC-F735F6667E0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexOutOfRangeExceptionExample", "IndexOutOfRangeExceptionExample\IndexOutOfRangeExceptionExample.csproj", "{2F4B1BAF-12D3-4BF1-BAF2-3DD8D2B55626}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8B754185-1D70-4A31-89DC-F735F6667E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B754185-1D70-4A31-89DC-F735F6667E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B754185-1D70-4A31-89DC-F735F6667E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4B1BAF-12D3-4BF1-BAF2-3DD8D2B55626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4B1BAF-12D3-4BF1-BAF2-3DD8D2B55626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4B1BAF-12D3-4BF1-BAF2-3DD8D2B55626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4B1BAF-12D3-4BF1-BAF2-3DD8D2B55626}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
