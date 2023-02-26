@@ -11,11 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopLevelStmt", "TopLevelStmt\TopLevelStmt.csproj", "{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileScopedExample", "FileScopedExample\FileScopedExample.csproj", "{5877A101-B899-43B6-A4AF-EF45AC605AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileScopedExample", "FileScopedExample\FileScopedExample.csproj", "{5877A101-B899-43B6-A4AF-EF45AC605AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUsingsExample", "GlobalUsingsExample\GlobalUsingsExample.csproj", "{904A5398-34EC-4641-9943-3FE008D908EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalUsingsExample", "GlobalUsingsExample\GlobalUsingsExample.csproj", "{904A5398-34EC-4641-9943-3FE008D908EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleInitializerExample", "ModuleInitializerExample\ModuleInitializerExample.csproj", "{0496E75E-C367-46EC-97A5-930104D841EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleInitializerExample", "ModuleInitializerExample\ModuleInitializerExample.csproj", "{0496E75E-C367-46EC-97A5-930104D841EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableRefTypes", "NullableRefTypes\NullableRefTypes.csproj", "{D7F33657-3D75-4BF2-984B-0F8624C0B72E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0496E75E-C367-46EC-97A5-930104D841EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0496E75E-C367-46EC-97A5-930104D841EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0496E75E-C367-46EC-97A5-930104D841EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
