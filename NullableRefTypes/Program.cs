@@ -1,13 +1,29 @@
 ﻿class Employee
 {
-    public int x { get; set; }
+    //public string FirstName { get; set; } = "default string";
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public AddressDetails? PersonAddressDetails { get; set; }
+
+    public Employee()
+    {
+        FirstName = "default string";
+        LastName = "default string";
+    }
+}
+
+class AddressDetails
+{
+    public string? City { get; set; }
+    public int? ZipCode { get; set; }
 }
 
 class EmployeeBusinessLogic
 {
     public Employee? GetEmployee()
     {
-        return null;
+        //return null;
+        return new Employee();
     }
 }
 class Program
@@ -16,13 +32,18 @@ class Program
     {
         EmployeeBusinessLogic employeeBusinessLogic = new EmployeeBusinessLogic();
         Employee? employee = employeeBusinessLogic.GetEmployee();
-        if (employee == null)
+
+        bool isValid = employee == null;
+        if (isValid)
         {
             Console.WriteLine("The variable is null");
         }
         else
         {
-            Console.WriteLine(employee.x);
+            Console.WriteLine(employee!.FirstName.ToUpper());
+            Console.WriteLine(employee!.LastName.ToUpper());
+            Console.WriteLine(employee!.PersonAddressDetails?.City); // ?. null propagation
+            Console.WriteLine(employee!.PersonAddressDetails?.ZipCode); // ?. null propagation
         }
         Console.ReadKey();
     }
