@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.NET5", "HelloWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{B834CEBC-1C6C-49AC-8756-CFDBB8CA0465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopLevelStmt", "TopLevelStmt\TopLevelStmt.csproj", "{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopLevelStmt", "TopLevelStmt\TopLevelStmt.csproj", "{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileScopedExample", "FileScopedExample\FileScopedExample.csproj", "{5877A101-B899-43B6-A4AF-EF45AC605AAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434809D7-E3D8-4BD2-9159-7CBE2AF1D2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5877A101-B899-43B6-A4AF-EF45AC605AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5877A101-B899-43B6-A4AF-EF45AC605AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5877A101-B899-43B6-A4AF-EF45AC605AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5877A101-B899-43B6-A4AF-EF45AC605AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
