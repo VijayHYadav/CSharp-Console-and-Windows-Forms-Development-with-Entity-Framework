@@ -28,20 +28,23 @@ class Descripter
 {
     public static string GetDescription(Person person)
     {
-        if (person is Employee emp)
+        switch (person)
         {
-            return $"{person.Name}, {person.Age}, {person.Gender}, {emp.Salary}";
+            //if the object is of Employee or any of its child type
+            case Employee emp:
+                return $"{person.Name}, {person.Age}, {person.Gender}, {emp.Salary}";
+
+            //if the object is of Customer or any of its child type
+            case Customer cst:
+                return $"{person.Name}, {person.Age}, {person.Gender}, {cst.CustomerBalance}";
+
+            //if the object is of Supplier or any of its child type
+            case Supplier sup:
+                return $"{person.Name}, {person.Age}, {person.Gender}, {sup.SupplierBalance}";
+
+            default:
+                return $"{person.Name}, {person.Age}, {person.Gender}";
         }
-        else if (person is Customer cst)
-        {
-            return $"{person.Name}, {person.Age}, {person.Gender}, {cst.CustomerBalance}";
-        }
-        else if (person is Supplier sup)
-        {
-            return $"{person.Name}, {person.Age}, {person.Gender}, {sup.SupplierBalance}";
-        }
-        else
-            return $"{person.Name}, {person.Age}, {person.Gender}";
     }
 }
 
