@@ -8,6 +8,11 @@ class Person
     public int? Age { get; set; }
     public string? Gender { get; set; }
     public MaritalStatus PersonMartialStatus { get; set; }
+
+    public void Deconstruct(out Person person, out string? gender, out int? age, out MaritalStatus maritalStatus)
+    {
+        (person, gender, age, maritalStatus) = (this, this.Gender, this.Age, this.PersonMartialStatus); //assign the values of properties into respective parameters (variables)
+    }
 }
 
 class Employee : Person
@@ -69,13 +74,18 @@ class Descripter
     public static string GetDescription3(Person person)
     {
         //Master, Mr, Miss, Mrs, Mx
-        return (person, person.Gender, person.Age, person.PersonMartialStatus) switch
+        //(person, person.Gender, person.Age, person.PersonMartialStatus)
+        return person switch
         {
-            (Person, "Female", _, MaritalStatus.Unmarried) => $"Miss. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
-            (Person, "Female", _, MaritalStatus.Married) => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
-            (Person, "Male", < 18, _) => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
-            (Person, "Male", >= 18, _) => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
-            (Person, not ("Male" or "Female"), _, _) => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
+            (Person, "Female", _, MaritalStatus.Unmarried) p => $"Miss. {p.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
+
+            (Person, "Female", _, MaritalStatus.Married) p => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
+
+            (Person, "Male", < 18, _) p => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
+
+            (Person, "Male", >= 18, _) p => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
+
+            (Person, not ("Male" or "Female"), _, _) p => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
             _ => $"{person.Name}"
         };
     }
