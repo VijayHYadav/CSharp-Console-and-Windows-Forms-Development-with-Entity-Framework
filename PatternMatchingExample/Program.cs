@@ -28,19 +28,16 @@ class Descripter
 {
     public static string GetDescription(Person person)
     {
-        if (person.GetType() == typeof(Employee))
+        if (person is Employee emp)
         {
-            Employee emp = (Employee)person;
             return $"{person.Name}, {person.Age}, {person.Gender}, {emp.Salary}";
         }
-        else if (person.GetType() == typeof(Customer))
+        else if (person is Customer cst)
         {
-            Customer cst = (Customer)person;
             return $"{person.Name}, {person.Age}, {person.Gender}, {cst.CustomerBalance}";
         }
-        else if (person.GetType() == typeof(Supplier))
+        else if (person is Supplier sup)
         {
-            Supplier sup = (Supplier)person;
             return $"{person.Name}, {person.Age}, {person.Gender}, {sup.SupplierBalance}";
         }
         else
@@ -54,7 +51,7 @@ class Program
     {
         Manager manager = new Manager() { Name = "John", Gender = "Male", Age = 20, Salary = 3000 };
         Customer customer = new Customer() { Name = "Smith", Gender = "Male", Age = 30, CustomerBalance = 1000 };
-        Console.WriteLine(Descripter.GetDescription(customer));
+        Console.WriteLine(Descripter.GetDescription(manager));
         Console.ReadKey();
     }
 }
