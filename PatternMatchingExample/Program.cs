@@ -1,8 +1,13 @@
-﻿class Person
+﻿enum MaritalStatus
+{
+    Unmarried, Married
+}
+class Person
 {
     public string? Name { get; set; }
     public int? Age { get; set; }
     public string? Gender { get; set; }
+    public MaritalStatus PersonMartialStatus { get; set; }
 }
 
 class Employee : Person
@@ -51,14 +56,28 @@ class Descripter
     {
         string result = person switch
         {
-            Person p when p.Age is < 13 => $"{p.Name} is Child", //p.Age < 13
-            Person p when p.Age is < 20 and >= 13 => $"{p.Name} is a Tennager", //p.Age < 20 && p.Age >= 13
-            Person p when p.Age is >= 20 and < 60 => $"{p.Name} is Adult", //p.Age >= 20 && p.Age < 60
-            Person p when p.Age is >= 60 and not (100 or 200) => $"{p.Name} is a senior citizen", //p.Age >= 60 && p.Age != 100 && p.Age != 200
-            Person p when p.Age is 100 or 200 => $"{p.Name} is Centenarian", //p.Age == 100 || p.Age == 200
+            Person { Age: < 13 } p => $"{p.Name} is Child", //p.Age < 13
+            Person { Age: < 20 and >= 13 } p => $"{p.Name} is a Tennager", //p.Age < 20 && p.Age >= 13
+            Person { Age: >= 20 and < 60 } p => $"{p.Name} is Adult", //p.Age >= 20 && p.Age < 60
+            Person { Age: >= 60 and not (100 or 200) } p => $"{p.Name} is a senior citizen", //p.Age >= 60 && p.Age != 100 && p.Age != 200
+            Person { Age: 100 or 200 } p => $"{p.Name} is Centenarian", //p.Age == 100 || p.Age == 200
             _ => $"{person.Name} is a person"
         };
         return result;
+    }
+
+    public static string GetDescription3(Person person)
+    {
+        //Master, Mr, Miss, Ms, Mx
+        return person switch
+        {
+            Person { Gender: "Female", PersonMartialStatus: MaritalStatus.Unmarried } => $"Miss. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
+            Person { Gender: "Female", PersonMartialStatus: MaritalStatus.Married } => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
+            Person { Gender: "Male", Age: < 18 } => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
+            Person { Gender: "Male", Age: >= 18 } => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
+            Person { Gender: not ("Male" or "Female") } => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
+            _ => $"{person.Name}"
+        };
     }
 }
 
@@ -66,10 +85,11 @@ class Program
 {
     static void Main()
     {
-        Manager manager = new Manager() { Name = "John", Gender = "Male", Age = 100, Salary = 3000 };
-        Customer customer = new Customer() { Name = "Smith", Gender = "Male", Age = 30, CustomerBalance = 1000 };
-        Console.WriteLine(Descripter.GetDescription(manager));
-        Console.WriteLine(Descripter.GetDescription2(manager));
+        Manager manager = new Manager() { Name = "John", Gender = "Male", Age = 100, Salary = 3000, PersonMartialStatus = MaritalStatus.Married };
+        Customer customer = new Customer() { Name = "Smith", Gender = "Male", Age = 30, CustomerBalance = 1000, PersonMartialStatus = MaritalStatus.Unmarried };
+        //Console.WriteLine(Descripter.GetDescription(manager));
+        //Console.WriteLine(Descripter.GetDescription2(manager));
+        Console.WriteLine(Descripter.GetDescription3(manager));
         Console.ReadKey();
     }
 }
