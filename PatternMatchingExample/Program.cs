@@ -8,11 +8,12 @@ class Person
     public int? Age { get; set; }
     public string? Gender { get; set; }
     public MaritalStatus PersonMartialStatus { get; set; }
+    public BirthDateInfo? BirthDate { get; set; }
+}
 
-    public void Deconstruct(out Person person, out string? gender, out int? age, out MaritalStatus maritalStatus)
-    {
-        (person, gender, age, maritalStatus) = (this, this.Gender, this.Age, this.PersonMartialStatus); //assign the values of properties into respective parameters (variables)
-    }
+class BirthDateInfo
+{
+    public DateTime DateOfBirth { get; set; }
 }
 
 class Employee : Person
@@ -74,18 +75,21 @@ class Descripter
     public static string GetDescription3(Person person)
     {
         //Master, Mr, Miss, Mrs, Mx
-        //(person, person.Gender, person.Age, person.PersonMartialStatus)
         return person switch
         {
-            (Person, "Female", _, MaritalStatus.Unmarried) p => $"Miss. {p.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
+            Person
+            {
+                Gender: "Female", PersonMartialStatus: MaritalStatus.Unmarried,
+                BirthDate.DateOfBirth.Year: > 2000
+            } p => $"Miss. {p.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried && person.BirthDate.DateOfBirth.Year > 2000
 
-            (Person, "Female", _, MaritalStatus.Married) p => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
+            Person { Gender: "Female", PersonMartialStatus: MaritalStatus.Married } p => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
 
-            (Person, "Male", < 18, _) p => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
+            Person { Gender: "Male", Age: < 18 } p => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
 
-            (Person, "Male", >= 18, _) p => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
+            Person { Gender: "Male", Age: >= 18 } p => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
 
-            (Person, not ("Male" or "Female"), _, _) p => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
+            Person { Gender: not ("Male" or "Female") } p => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
             _ => $"{person.Name}"
         };
     }
@@ -95,7 +99,16 @@ class Program
 {
     static void Main()
     {
-        Manager manager = new Manager() { Name = "John", Gender = "Male", Age = 100, Salary = 3000, PersonMartialStatus = MaritalStatus.Married };
+        Manager manager = new Manager()
+        {
+            Name = "John",
+            Gender = "Male",
+            Age = 16,
+            Salary = 3000,
+            PersonMartialStatus = MaritalStatus.Married,
+            BirthDate = new BirthDateInfo() { DateOfBirth = DateTime.Parse("2002-01-1") }
+        };
+
         Customer customer = new Customer() { Name = "Smith", Gender = "Male", Age = 30, CustomerBalance = 1000, PersonMartialStatus = MaritalStatus.Unmarried };
         //Console.WriteLine(Descripter.GetDescription(manager));
         //Console.WriteLine(Descripter.GetDescription2(manager));
