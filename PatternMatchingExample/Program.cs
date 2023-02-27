@@ -68,14 +68,14 @@ class Descripter
 
     public static string GetDescription3(Person person)
     {
-        //Master, Mr, Miss, Ms, Mx
-        return person switch
+        //Master, Mr, Miss, Mrs, Mx
+        return (person, person.Gender, person.Age, person.PersonMartialStatus) switch
         {
-            Person { Gender: "Female", PersonMartialStatus: MaritalStatus.Unmarried } => $"Miss. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
-            Person { Gender: "Female", PersonMartialStatus: MaritalStatus.Married } => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
-            Person { Gender: "Male", Age: < 18 } => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
-            Person { Gender: "Male", Age: >= 18 } => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
-            Person { Gender: not ("Male" or "Female") } => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
+            (Person, "Female", _, MaritalStatus.Unmarried) => $"Miss. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Unmarried
+            (Person, "Female", _, MaritalStatus.Married) => $"Mrs. {person.Name}", //person.Gender == "Female" && person.PersonMartialStatus == MartialStatus.Married
+            (Person, "Male", < 18, _) => $"Master. {person.Name}", //person.Gender == "Male" && person.Age < 18
+            (Person, "Male", >= 18, _) => $"Mr. {person.Name}", //person.Gender == "Male" && person.Age >= 18
+            (Person, not ("Male" or "Female"), _, _) => $"Mx. {person.Name}", //person.Gender != "Male" && person.Gender != "Female"
             _ => $"{person.Name}"
         };
     }
