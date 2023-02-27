@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalUsingsExample", "Glob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleInitializerExample", "ModuleInitializerExample\ModuleInitializerExample.csproj", "{0496E75E-C367-46EC-97A5-930104D841EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableRefTypes", "NullableRefTypes\NullableRefTypes.csproj", "{D7F33657-3D75-4BF2-984B-0F8624C0B72E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableRefTypes", "NullableRefTypes\NullableRefTypes.csproj", "{D7F33657-3D75-4BF2-984B-0F8624C0B72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatchingExample", "PatternMatchingExample\PatternMatchingExample.csproj", "{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7F33657-3D75-4BF2-984B-0F8624C0B72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
