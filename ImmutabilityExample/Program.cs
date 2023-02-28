@@ -4,11 +4,17 @@
     private readonly int _accountNumber;
     private readonly double _curentBalance;
 
-    //constructor
+    //parameterized constructor
     public BankAccount(int accountNumber, double currentBalance)
     {
         _accountNumber = accountNumber;
         _curentBalance = currentBalance;
+    }
+
+    public BankAccount()
+    {
+        _accountNumber = 0;
+        _curentBalance = 0;
     }
 
     //public properties
