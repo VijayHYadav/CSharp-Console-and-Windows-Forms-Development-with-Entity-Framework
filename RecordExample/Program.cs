@@ -25,9 +25,28 @@
         {
             return $"Mr./Ms. {Name}";
         }
+
+        public override string ToString()
+        {
+            return $"Name is {Name}";
+        }
     }
 
-    public sealed record Employee(string? Name, DateTime? DateOfBirth, double? Salary) : Person(Name, DateOfBirth);
+    public record Employee(string? Name, DateTime? DateOfBirth, double? Salary) : Person(Name, DateOfBirth)
+    {
+        public sealed override string ToString()
+        {
+            return $"Salary is {Salary}, {base.ToString()}";
+        }
+    }
+
+    public record Manager(): Employee(null, null, null)
+    {
+        // public override string ToString() // Error: can not override inherited memeber ToString() because it is sealed.
+        // {
+
+        // }
+    }
 
     class Program
     {
