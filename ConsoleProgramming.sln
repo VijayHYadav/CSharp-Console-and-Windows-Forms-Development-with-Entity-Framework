@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleInitializerExample", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullableRefTypes", "NullableRefTypes\NullableRefTypes.csproj", "{D7F33657-3D75-4BF2-984B-0F8624C0B72E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatchingExample", "PatternMatchingExample\PatternMatchingExample.csproj", "{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternMatchingExample", "PatternMatchingExample\PatternMatchingExample.csproj", "{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutabilityExample", "ImmutabilityExample\ImmutabilityExample.csproj", "{EFCC98E6-033E-4CEC-B05A-8EC1BF73E757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA6A14C6-64C1-4A0D-B8CE-E55F97353AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCC98E6-033E-4CEC-B05A-8EC1BF73E757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCC98E6-033E-4CEC-B05A-8EC1BF73E757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCC98E6-033E-4CEC-B05A-8EC1BF73E757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCC98E6-033E-4CEC-B05A-8EC1BF73E757}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
