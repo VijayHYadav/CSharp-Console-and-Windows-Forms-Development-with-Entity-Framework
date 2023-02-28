@@ -1,4 +1,4 @@
-﻿class BankAccount
+﻿readonly struct BankAccount
 {
     //private readonly fields
     private readonly int _accountNumber;
@@ -28,11 +28,6 @@
                 _curentBalance = value;
             }
         }
-    }
-
-    //parameter-less constructor
-    public BankAccount()
-    {
     }
 }
 
