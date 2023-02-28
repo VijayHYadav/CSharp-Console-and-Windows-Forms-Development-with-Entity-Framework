@@ -11,16 +11,28 @@
         _curentBalance = currentBalance;
     }
 
-    //public properties // get accessors
+    //public properties
     public int AccountNumber
     {
-        // sortcut way return value by =>
         get => _accountNumber;
+        init => _accountNumber = value;
     }
 
     public double CurrentBalance
     {
         get => _curentBalance;
+        init
+        {
+            if (value >= 0)
+            {
+                _curentBalance = value;
+            }
+        }
+    }
+
+    //parameter-less constructor
+    public BankAccount()
+    {
     }
 }
 
@@ -30,7 +42,7 @@ class DataStorage
     public static List<BankAccount> GetBankAccounts()
     {
         return new List<BankAccount>() {
-            new BankAccount(1, 1000),
+            new BankAccount() { AccountNumber = 1, CurrentBalance = 1000 }, //access init-only properties in object initializer
             new BankAccount(2, 2000)
         };
     }
@@ -38,7 +50,7 @@ class DataStorage
     //developer 2
     public static double GetCurrentBalance(BankAccount bankAccount)
     {
-        // bankAccount.AccountNumber = 100; //unexpectedly it changes the value of Account Number
+        //bankAccount.AccountNumber = 100; //unexpectedly it changes the value of Account Number
         return bankAccount.CurrentBalance;
     }
 }
