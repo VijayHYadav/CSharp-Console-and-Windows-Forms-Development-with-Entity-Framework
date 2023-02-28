@@ -38,7 +38,7 @@ class DataStorage
     //developer 2
     public static double GetCurrentBalance(BankAccount bankAccount)
     {
-        //bankAccount.AccountNumber = 100; //unexpectedly it changes the value of Account Number
+        // bankAccount.AccountNumber = 100; //unexpectedly it changes the value of Account Number
         return bankAccount.CurrentBalance;
     }
 }
