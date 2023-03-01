@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1", "App1\App1.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App2", "App2\App2.csproj", "{0E00465E-C650-46C1-916A-F4053ACE931C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialMethodsExample", "PartialMethodsExample\PartialMethodsExample.csproj", "{CA732507-A90E-43B4-819C-CAE9C61AFCE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{0E00465E-C650-46C1-916A-F4053ACE931C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E00465E-C650-46C1-916A-F4053ACE931C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E00465E-C650-46C1-916A-F4053ACE931C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA732507-A90E-43B4-819C-CAE9C61AFCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA732507-A90E-43B4-819C-CAE9C61AFCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA732507-A90E-43B4-819C-CAE9C61AFCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA732507-A90E-43B4-819C-CAE9C61AFCE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
