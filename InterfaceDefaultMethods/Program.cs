@@ -4,8 +4,8 @@
     {
         public string Name { get; set; }
 
-        //private default interface methods
-        private string GetNameTitle()
+        //static interface method
+        internal static string GetNameTitle()
         {
             return "Mr./Ms.";
         }
@@ -13,7 +13,7 @@
         //default interface methods [or] virtual extension method
         internal string GetNameInUpperCase()
         {
-            return GetNameTitle() + " " + Name.ToUpper();
+            return IEmployee.GetNameTitle() + " " + Name.ToUpper();
         }
 
         internal string GetNameInLowerCase();
@@ -49,6 +49,7 @@
             Console.WriteLine(iemp.GetNameInUpperCase());
             Console.WriteLine(iemp.GetNameInLowerCase());
             Console.WriteLine(manager.GetNameLength());
+            Console.WriteLine(IEmployee.GetNameTitle());
             Console.ReadKey();
         }
     }
