@@ -29,7 +29,7 @@
         {
             Manager manager = new Manager();
             manager.Name = "William";
-            IEmployee iemp = manager;
+            IEmployee iemp = manager; // type casting will be performed automatically you need not (IEmployee)manager
             Console.WriteLine(iemp.GetNameInUpperCase());
             Console.ReadKey();
         }
