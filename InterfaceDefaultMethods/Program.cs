@@ -4,10 +4,16 @@
     {
         public string Name { get; set; }
 
+        //private default interface methods
+        private string GetNameTitle()
+        {
+            return "Mr./Ms.";
+        }
+
         //default interface methods [or] virtual extension method
         internal string GetNameInUpperCase()
         {
-            return Name.ToUpper();
+            return GetNameTitle() + " " + Name.ToUpper();
         }
 
         internal string GetNameInLowerCase();
@@ -26,7 +32,7 @@
             return Name.ToLower();
         }
 
-        //Option 2: You can convert the non-public abstract interface methods as 'public'
+        //Option 2: You can convert the non-public abstract interface method as 'public'
         public int GetNameLength()
         {
             return Name.Length;
@@ -39,8 +45,8 @@
         {
             Manager manager = new Manager();
             manager.Name = "William";
-            IEmployee iemp = manager; // type casting will be performed automatically you need not (IEmployee)manager
-            Console.WriteLine(iemp.GetNameInUpperCase()); 
+            IEmployee iemp = manager;
+            Console.WriteLine(iemp.GetNameInUpperCase());
             Console.WriteLine(iemp.GetNameInLowerCase());
             Console.WriteLine(manager.GetNameLength());
             Console.ReadKey();
