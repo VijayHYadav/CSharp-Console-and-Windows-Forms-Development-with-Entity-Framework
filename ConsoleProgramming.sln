@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExprExample", "Lambda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstantInterpolatedStrings", "ConstantInterpolatedStrings\ConstantInterpolatedStrings.csproj", "{DC743571-14B3-4442-9729-F97EABB8CF3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceDefaultMethods", "InterfaceDefaultMethods\InterfaceDefaultMethods.csproj", "{28C9A72C-D11B-48AC-917C-0199D154D0A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{DC743571-14B3-4442-9729-F97EABB8CF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC743571-14B3-4442-9729-F97EABB8CF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC743571-14B3-4442-9729-F97EABB8CF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C9A72C-D11B-48AC-917C-0199D154D0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C9A72C-D11B-48AC-917C-0199D154D0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C9A72C-D11B-48AC-917C-0199D154D0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C9A72C-D11B-48AC-917C-0199D154D0A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
